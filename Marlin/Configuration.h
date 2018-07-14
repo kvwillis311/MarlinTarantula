@@ -80,7 +80,7 @@
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
 //#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
-//#define SN04          // Green sensor
+#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
@@ -93,8 +93,8 @@
 //#define TRIPOINT
 //#define LINEAR
 //#define BILINEAR
-//#define UBL
-#define MANUAL
+#define UBL
+//#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
@@ -126,7 +126,7 @@
 /**
  * Enable this to turn on support for two extruders
  */
-//#define DUAL_EXTRUDER // If not single nozzle, primary nozzle plugged in to E0 port
+#define DUAL_EXTRUDER // If not single nozzle, primary nozzle plugged in to E0 port
                         // and secondary plugged in to E1 port.
 //#define SINGLENOZZLE  // Enable this if you are using a single mixing nozzle (requires DUAL_EXTRUDER)
 
@@ -137,7 +137,7 @@
  * The Y value is positive if the secondary nozzle is behind the primary and
  * negative if the secondary nozzle is in front of the primary.
  */
-#define EXTRUDER_E1_X 0
+#define EXTRUDER_E1_X 17
 #define EXTRUDER_E1_Y 0
 
 /** 
